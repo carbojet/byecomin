@@ -20,11 +20,14 @@ export default function Header() {
                     >
                         <Image width={150} height={45}  alt="byecom logo" src="/byecom-logo.png" />
                     </Link>
+                </div>
+
+                <div id='w-node-04a30b2a6534-0b2a6533' className='flex-center'>
 
                     <nav role='navigation' className='nav-menu w-nav-menu'>
-                        <Link href='/'>
+                        {/* <Link href='/'>
                             <a className='nav-link w-nav-link'>Home</a>
-                        </Link>
+                        </Link> */}
                         <Link href='/career'>
                             <a className='nav-link w-nav-link'>Careers</a>
                         </Link>
