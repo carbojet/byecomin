@@ -6,6 +6,20 @@ import Header from "../components/header";
 import Head from "next/head";
 
 export default function Home() {
+  const team = [
+    {
+      image: "/priya.png",
+    },
+    {
+      image: "/jaga.png",
+    },
+    {
+      image: "/sunil.png",
+    },
+    {
+      image: "/raj.png",
+    },
+  ];
   return (
     <>
       <Head>
@@ -74,157 +88,149 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="section bg-padding-top">
+        <div className="margin-40px">
+          <h2
+            className="hero-title innovate-disrupt-title"
+            data-w-id="ae36a5cd-d205-a375-9f37-d6ef78019124"
+          >
+            {" "}
+            {/* <span className="add-scribble-below">{" Innovate "}</span> */}
+            <span className="">{" Innovate "}</span>
+            {" to scale and disrupt"}
+          </h2>
+
+          <div className="">
+            <p
+              className="hero-title innovate-disrupt-subtitle"
+              data-w-id="07f2d188-0f77-6fc0-b04c-7532349c8825"
+            >
+              Bringing the Finest Platform Directly to you
+              <br />
+            </p>
+          </div>
+        </div>
+
+        <div className="hero-section innovate-disrupt">
           <div className="container">
-            <div className="lightbox-wrapper">
-              <Link href="#">
-                <a
-                  className="lightbox-link w-inline-block w-lightbox"
-                  data-w-id="1773fd31-dd51-aac7-5599-7e7783962954"
-                >
-                  <Image alt="" width={25} height={25} src="/play-filled.svg" />
-                </a>
-              </Link>
-
-              <div className="margin-40px">
-                <div
-                  className="scribble-arrow"
-                  data-w-id="056f5a68-f594-ef10-7547-2e1486dcaf67"
-                >
-                  <Image alt="" width={50} height={50} src="/scribbles-6.png" />
-                </div>
-
-                <h2
-                  className="hero-title _50px"
-                  data-w-id="ae36a5cd-d205-a375-9f37-d6ef78019124"
-                >
-                  {" "}
-                  <span className="add-scribble-below">{" Innovate "}</span>
-                  {" to scale and disrupt"}
-                </h2>
-
-                <div className="margin-15px">
-                  <p
-                    className="sub-heading"
-                    data-w-id="07f2d188-0f77-6fc0-b04c-7532349c8825"
-                  >
-                    bringing you the finest platform directly to you.
-                    <br />
-                  </p>
-                </div>
+            <div className="hero-grid innovate-disrupt">
+              <div className="illustration">
+                <Image
+                  width={667}
+                  height={349}
+                  alt="build design"
+                  src="/mockups.png"
+                  data-w-id="399e8c32-6738-71ad-2624-e1b30882b726"
+                />
               </div>
-            </div>
 
-            <div className="margin-block">
-              <div className="author-quote">
-                <div className="author-circle"></div>
-                <div className="author-wrapper">
-                  <div className="content-inside">
-                    <div className="_80-percent-block">
-                      <Image alt="" width={120} height={41} src="/logo-1.png" />
+              <div id="w-node-5038eeef659c-0e15684b">
+                <h1
+                  data-w-id="2ed10de6-2495-8eef-7dda-117fa3821790"
+                  className="hero-title innovate-disrupt"
+                >
+                  India’s upcoming Neighborhood Marketplace
+                  <br />
+                </h1>
 
-                      <div className="margin-40px">
-                        <p>
-                          “We are talking about a platform that act as a medium
-                          to scale and automate your business with aggregated
-                          and individual know how”
-                          <br />
-                        </p>
-                      </div>
-
-                      <div className="margin-20px">
-                        <h4>Sunil Kumar Mutaka, Technical Strategy</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="shape">
-                    <Image alt="" width={750} height={352} src="/shape.png" />
-                  </div>
+                <div className="subtext-view innovate-disrupt">
+                  <p
+                    data-w-id="059c0b0c-a0ee-feb4-95c5-8c9c0684e254"
+                    className="sub-heading innovate-disrupt"
+                  >
+                    shop Online and experience the ease of home delivery
+                    <br />
+                    <Image
+                      width={133}
+                      height={40}
+                      alt="build design"
+                      src="/groupVinkel.png"
+                      data-w-id="399e8c32-6738-71ad-2624-e1b30882b726"
+                    />
+                    <br />
+                    <p className="sub-heading innovate-disrupt learn-more">
+                      Learn More ...
+                    </p>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="features-section">
+        <div className="hero-section innovate-disrupt">
           <div className="container">
-            <div className="features-grid _50">
-              <div className="boxes-grid">
-                <div className="features-content">
-                  <Image
-                    alt=""
-                    width={50}
-                    height={50}
-                    src="/icons8-web-design-512.png"
-                  />
-                  <h3>
-                    Professionally Designed Demos
-                    <br />
-                  </h3>
-                  <p>
-                    Pixel perfect & expertly crafted to meet standards.
-                    <br />
-                  </p>
-                </div>
+            <div className="hero-grid innovate-disrupt">
+              <div className="illustration">
+                <div className="hero-section innovate-disrupt play-store">
+                  <div className="container">
+                    <div className="hero-grid innovate-disrupt play-store">
+                      <p>Download The Shopping App </p>
+                      <p>&nbsp;Now</p>
+                      <div className="illustration">
+                        <Image
+                          width={141.4}
+                          height={42.98}
+                          alt="build design"
+                          src="/appStore.png"
+                          data-w-id="399e8c32-6738-71ad-2624-e1b30882b726"
+                        />
+                      </div>
 
-                <div className="features-content">
-                  <Image
-                    alt=""
-                    width={50}
-                    height={50}
-                    src="/icons8-smartphone-tablet-512.png"
-                  />
-                  <h3>
-                    Responsive On Any Device
-                    <br />
-                  </h3>
-                  <p>
-                    Showcase your site on all devices with confidence.
-                    <br />
-                  </p>
-                </div>
-
-                <div className="features-content">
-                  <Image
-                    alt=""
-                    width={50}
-                    height={50}
-                    src="/icons8-online-support-512.png"
-                  />
-                  <h3>
-                    Professional, World-Class Support
-                    <br />
-                  </h3>
-                  <p>
-                    We love what we do & who we do it for.
-                    <br />
-                  </p>
-                </div>
-
-                <div className="features-content">
-                  <Image
-                    alt=""
-                    width={50}
-                    height={50}
-                    src="/icons8-view-quilt-512.png"
-                  />
-                  <h3>
-                    Unlimited Layouts & Designs
-                    <br />
-                  </h3>
-                  <p>
-                    Design anything. The only limit is your imagination.
-                    <br />
-                  </p>
+                      <div className="illustration">
+                        <Image
+                          width={141.4}
+                          height={42.98}
+                          alt="build design"
+                          src="/playStore.png"
+                          data-w-id="399e8c32-6738-71ad-2624-e1b30882b726"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="features-photo"></div>
+              <div id="w-node-5038eeef659c-0e15684b">
+                <div className="subtext-view innovate-disrupt">
+                  <p
+                    data-w-id="059c0b0c-a0ee-feb4-95c5-8c9c0684e254"
+                    className="sub-heading innovate-disrupt play-store"
+                  >
+                    bring Your store online with Vinkel
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div className="scribble-3">
-            <Image alt="" width={60} height={60} src="/scribbles-5.png" />
+        <div style={{ backgroundColor: "#00DB68", paddingTop: "30px" }}>
+          <h2
+            className="hero-title team-title"
+            data-w-id="ae36a5cd-d205-a375-9f37-d6ef78019124"
+          >
+            {" "}
+            {/* <span className="add-scribble-below">{" Innovate "}</span> */}
+            <span className="">{"Meet Our Team Behind The Idea"}</span>
+            {/* {" to scale and disrupt"} */}
+          </h2>
+        </div>
+
+        <div className="hero-section team-grid-padding">
+          <div className="container">
+            <div className="team-grid">
+              {team.map((row, index) => (
+                <div key={index}>
+                  <Image
+                    width={286.96}
+                    height={256.2}
+                    alt="build design"
+                    src={row.image}
+                    data-w-id="399e8c32-6738-71ad-2624-e1b30882b726"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

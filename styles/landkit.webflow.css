@@ -2108,6 +2108,19 @@ figure {
   background-color: #e4edef;
 }
 
+.hero-section.innovate-disrupt {
+  background-color: #fff;
+  padding: 5px 5% 50px;
+}
+
+.hero-section.innovate-disrupt.play-store {
+  padding: 5px 36% 5px 12%;
+}
+
+.hero-section.team-grid-padding {
+  padding: 60px 10%;
+}
+
 .navigation {
   position: fixed;
   left: 0%;
@@ -2472,6 +2485,20 @@ figure {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.team-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 20px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.anda {
+  position: absolute;
+}
+
 .hero-grid {
   display: -ms-grid;
   display: grid;
@@ -2482,6 +2509,22 @@ figure {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+.hero-grid.innovate-disrupt {
+  grid-column-gap: 0px;
+  margin-top: 30px;
+}
+
+.hero-grid.innovate-disrupt.play-store {
+  grid-row-gap: 0px;
+  margin-top: 0px;
+}
+
+.hero-grid.innovate-disrupt.play-store p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 134.4%;
 }
 
 .scribble-1 {
@@ -2500,6 +2543,36 @@ figure {
   font-size: 46px;
   line-height: 53.91px;
   letter-spacing: 0.075em;
+  text-align: center;
+}
+
+.hero-title.innovate-disrupt {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-title.innovate-disrupt-title {
+  text-align: center;
+  letter-spacing: 0.055em;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 28px;
+}
+
+.hero-title.team-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.hero-title.innovate-disrupt-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .hero-title._50px {
@@ -2538,6 +2611,10 @@ figure {
 
 .margin-40px {
   margin-top: 40px;
+}
+
+.subtext-view.innovate-disrupt {
+  margin: 40px 100px 0px;
 }
 
 .button-flex {
@@ -3168,6 +3245,28 @@ figure {
 .sub-heading {
   font-size: 20px;
   line-height: 28px;
+}
+
+.sub-heading.innovate-disrupt {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sub-heading.innovate-disrupt.play-store {
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  text-decoration-line: underline;
+}
+
+.sub-heading.innovate-disrupt.learn-more {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 5%;
+  letter-spacing: 0.005em;
+  text-transform: none;
+  margin-top: -6px;
 }
 
 .sub-heading.color-white {
