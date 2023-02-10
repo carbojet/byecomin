@@ -2110,7 +2110,7 @@ figure {
 
 .hero-section.innovate-disrupt {
   background-color: #fff;
-  padding: 5px 5% 50px;
+  padding: 0px 5%;
 }
 
 .hero-section.innovate-disrupt.play-store {
@@ -2119,6 +2119,25 @@ figure {
 
 .hero-section.team-grid-padding {
   padding: 60px 10%;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-section.initial,
+  .hero-section.innovate-disrupt.mid {
+    overflow: hidden;
+  }
+
+  .hero-section.initial {
+    height: 100vh;
+  }
+
+  .hero-section.innovate-disrupt.mid {
+    height: 50vh;
+  }
+
+  .hero-section.innovate-disrupt.play-store {
+    height: 18vh;
+  }
 }
 
 .navigation {
@@ -2511,6 +2530,11 @@ figure {
   grid-template-rows: auto;
 }
 
+.hero-grid.initial {
+  grid-template-columns: 1.7fr 1fr;
+  grid-column-gap: 0px;
+}
+
 .hero-grid.innovate-disrupt {
   grid-column-gap: 0px;
   margin-top: 30px;
@@ -2540,14 +2564,18 @@ figure {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #000;
-  font-size: 46px;
+  font-size: 3.286em;
   line-height: 53.91px;
   letter-spacing: 0.075em;
   text-align: center;
 }
 
+.hero-title.initial-alignment-left {
+  text-align: left;
+}
+
 .hero-title.innovate-disrupt {
-  font-size: 42px;
+  font-size: 3em;
   font-weight: 400;
   letter-spacing: 0.035em;
   text-transform: uppercase;
@@ -2558,19 +2586,19 @@ figure {
   text-align: center;
   letter-spacing: 0.055em;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 2.571em;
   line-height: 28px;
 }
 
 .hero-title.team-title {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 2.571em;
   line-height: 40px;
 }
 
 .hero-title.innovate-disrupt-subtitle {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 40px;
   text-align: center;
 }
@@ -5323,13 +5351,22 @@ figure {
     grid-template-columns: 1fr;
   }
 
+  .hero-grid.initial {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .scribble-1 {
     width: 80px;
   }
 
   .hero-title {
-    font-size: 60px;
+    font-size: 4.286em;
     line-height: 60px;
+  }
+
+  .hero-title.initial-alignment-left {
+    text-align: center;
   }
 
   .button-flex.in-blog-item {
@@ -5754,7 +5791,7 @@ figure {
   }
 
   .hero-title {
-    font-size: 50px;
+    font-size: 3.571em;
     line-height: 55px;
   }
 
@@ -6035,7 +6072,7 @@ figure {
   }
 
   .hero-title {
-    font-size: 40px;
+    font-size: 2.857em;
     line-height: 45px;
   }
 

@@ -1,9 +1,29 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Header() {
-    return (
-        <div
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState();
+  //   console.log("styles", styles)
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu);
+  };
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+  return (
+    <>
+      <div
             data-collapse='medium'
             data-animation='default'
             data-duration='400'
@@ -25,29 +45,41 @@ export default function Header() {
                 <div id='w-node-04a30b2a6534-0b2a6533' className='flex-center'>
 
                     <nav role='navigation' className='nav-menu w-nav-menu'>
-                        {/* <Link href='/'>
-                            <a className='nav-link w-nav-link'>Home</a>
-                        </Link> */}
+                        
                         <Link href='/career'>
                             <a className='nav-link w-nav-link'>Careers</a>
                         </Link>
                         <Link href='/contact'>
                             <a className='nav-link w-nav-link'>Contact</a>
                         </Link>
-                        {/* <Link href='/'>
-                            <a className='nav-link w-nav-link'>About Us</a>
-                        </Link> */}
+                        
                     </nav>
                 </div>
 
                 <div id='w-node-04a30b2a6592-0b2a6532' className='flex-center'>
                     <div className='menu-button w-nav-button'>
-                        <div className='line-1'></div>
-                        <div className='line-3'></div>
+                        <div className='line-1'>Hello</div>
+                        <div className='line-3'>Boy</div>
                         <div className='line-2'></div>
                     </div>
                 </div>
             </div>
         </div>
-    );
+      <div className="sabya" style={{height: '5vh'}}>
+        <nav>
+          {(toggleMenu || screenWidth > 500) && (
+            <ul className="list">
+              <li className="items">Home</li>
+              <li className="items">Services</li>
+              <li className="items">Contact</li>
+            </ul>
+          )}
+
+          <button onClick={toggleNav} className="btn">
+            BTN
+          </button>
+        </nav>
+      </div>
+    </>
+  );
 }

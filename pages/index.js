@@ -32,10 +32,10 @@ export default function Home() {
         />
       </Head>
       <Layout title="Home">
-        <Header />
-        <div className="hero-section">
+        <Header/>
+        <div className="hero-section initial">
           <div className="container">
-            <div className="hero-grid">
+            <div className="hero-grid initial">
               <div id="w-node-5038eeef659c-0e15684b">
                 <div
                   style={{
@@ -52,7 +52,7 @@ export default function Home() {
                 ></div>
                 <h1
                   data-w-id="2ed10de6-2495-8eef-7dda-117fa3821790"
-                  className="hero-title"
+                  className="hero-title initial-alignment-left"
                 >
                   {/* {"Let’s Build "} 
                 <span className="add-scribble-below">{" the India’s"}</span>
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="margin-40px">
+        <div style={{height: '10vh', marginTop: '5vh'}}>
           <h2
             className="hero-title innovate-disrupt-title"
             data-w-id="ae36a5cd-d205-a375-9f37-d6ef78019124"
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-section innovate-disrupt">
+        <div className="hero-section innovate-disrupt mid">
           <div className="container">
             <div className="hero-grid innovate-disrupt">
               <div className="illustration">
