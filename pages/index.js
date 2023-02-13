@@ -165,7 +165,7 @@ export default function Home() {
                   <div className="container">
                     <div className="hero-grid innovate-disrupt play-store">
                       <p>Download The Shopping App </p>
-                      <p>&nbsp;Now</p>
+                      <p className="now">&nbsp;Now</p>
                       <div className="illustration">
                         <Image
                           width={141.4}
@@ -220,7 +220,7 @@ export default function Home() {
           <div className="container">
             <div className="team-grid">
               {team.map((row, index) => (
-                <div key={index}>
+                <div key={index} style={{marginTop: '2vh'}}>
                   <Image
                     width={286.96}
                     height={256.2}

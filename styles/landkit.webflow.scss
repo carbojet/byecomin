@@ -2117,8 +2117,23 @@ figure {
   padding: 5px 36% 5px 12%;
 }
 
+@media screen and (max-width: 991px) {
+  .hero-section.innovate-disrupt.play-store {
+    padding: 5px 0% 5px 28vw;
+    .now {
+      margin-left: 14vw;
+    }
+  }
+}
+
 .hero-section.team-grid-padding {
   padding: 60px 10%;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-section.team-grid-padding {
+    padding: 5vh 15vw;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -2512,6 +2527,13 @@ figure {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .team-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 .anda {
