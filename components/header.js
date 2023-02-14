@@ -34,12 +34,14 @@ export default function Header() {
         <div className="container grid w-container">
           <div id="w-node-04a30b2a6534-0b2a6532" className="flex-center">
             <Link passHref href="/" className="brand left-margin w-nav-brand">
-              <Image
-                width={150}
-                height={45}
-                alt="byecom logo"
-                src="/byecom-logo.png"
-              />
+              <a>
+                <Image
+                  width={150}
+                  height={45}
+                  alt="byecom logo"
+                  src="/byecom-logo.png"
+                />
+              </a>
             </Link>
           </div>
 

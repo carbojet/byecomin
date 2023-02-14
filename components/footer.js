@@ -45,20 +45,21 @@ export default function Footer() {
           <div className="footer-column">
             <h4 className="footer-title dark-title">office</h4>
             <div className="margin-25px">
-              <p>
-              Mahavir Nagar, Stage-V Bhubaneswar - 751006, Odisha, India
-              </p>
+              <p>Mahavir Nagar, Stage-V Bhubaneswar - 751006, Odisha, India</p>
             </div>
             <div className="margin-25px">
               <p>
-              #P- 477, #208 LOTUS COURT, Pune Satara Road, PUNE- 411009 Maharashtra, India
+                #P- 477, #208 LOTUS COURT, Pune Satara Road, PUNE- 411009
+                Maharashtra, India
               </p>
             </div>
 
             <div className="margin-30px">
               <p>
                 <span style={{ fontWeight: "bold" }}>email: </span>
-                <a href="#">info@byecom.in / hr@byecom.in</a>
+                <Link href="mailto:info@byecom.in" passHref>
+                  <a>info@byecom.in</a>
+                </Link>
                 <br />
               </p>
             </div>
@@ -88,7 +89,7 @@ export default function Footer() {
                                             w-inline-block
                                         "
                   >
-                    <Image src="/twitter.png" width={14} height={14} alt="" />
+                    <Image src="/linkedin.png" width={14} height={14} alt="" />
                   </a>
                 </Link>
 

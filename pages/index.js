@@ -20,6 +20,10 @@ export default function Home() {
       image: "/raj.png",
     },
   ];
+  const playStoreUrl =
+    "https://play.google.com/store/apps/details?id=com.vinkelmarket";
+  const playStoreMerchUrl =
+    "https://play.google.com/store/apps/details?id=com.vinkelstore";
   return (
     <>
       <Head>
@@ -32,7 +36,7 @@ export default function Home() {
         />
       </Head>
       <Layout title="Home">
-        <Header/>
+        <Header />
         <div className="hero-section initial">
           <div className="container">
             <div className="hero-grid initial">
@@ -88,7 +92,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div style={{height: '10vh', marginTop: '5vh'}}>
+        <div style={{ height: "10vh", marginTop: "5vh" }}>
           <h2
             className="hero-title innovate-disrupt-title"
             data-w-id="ae36a5cd-d205-a375-9f37-d6ef78019124"
@@ -177,13 +181,17 @@ export default function Home() {
                       </div>
 
                       <div className="illustration">
-                        <Image
-                          width={141.4}
-                          height={42.98}
-                          alt="build design"
-                          src="/playStore.png"
-                          data-w-id="399e8c32-6738-71ad-2624-e1b30882b726"
-                        />
+                        <Link passHref href={playStoreUrl}>
+                          <a target={"_blank"}>
+                            <Image
+                              width={141.4}
+                              height={42.98}
+                              alt="build design"
+                              src="/playStore.png"
+                              data-w-id="399e8c32-6738-71ad-2624-e1b30882b726"
+                            />
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -192,12 +200,16 @@ export default function Home() {
 
               <div id="w-node-5038eeef659c-0e15684b">
                 <div className="subtext-view innovate-disrupt">
-                  <p
-                    data-w-id="059c0b0c-a0ee-feb4-95c5-8c9c0684e254"
-                    className="sub-heading innovate-disrupt play-store"
-                  >
-                    bring Your store online with Vinkel
-                  </p>
+                  <Link passHref href={playStoreMerchUrl}>
+                    <a target={"_blank"}>
+                      <p
+                        data-w-id="059c0b0c-a0ee-feb4-95c5-8c9c0684e254"
+                        className="sub-heading innovate-disrupt play-store"
+                      >
+                        bring Your store online with Vinkel
+                      </p>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -220,7 +232,7 @@ export default function Home() {
           <div className="container">
             <div className="team-grid">
               {team.map((row, index) => (
-                <div key={index} style={{marginTop: '2vh'}}>
+                <div key={index} style={{ marginTop: "2vh" }}>
                   <Image
                     width={286.96}
                     height={256.2}
