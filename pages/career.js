@@ -1,116 +1,95 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import Layout from '../components/layout';
-import HeaderAlt from '../components/header-alt';
+import Link from "next/link";
+import Image from "next/image";
+import Layout from "../components/layout";
+import HeaderAlt from "../components/header-alt";
 import Header from "../components/header";
 
 export default function Career() {
-    return (
-      <Layout title="Career">
-        <Header />
-        <div className="sub-hero-section">
-          <div className="container">
-            <div className="hero-title-center flex-inner">
-              <div className="tag-text">Hiring now</div>
+  const featureArray = [
+    {
+      name: "HR Executive",
+      desc: "Candidate must have any Degree & IT Recruiting Experience.",
+      icon: "/icons8-web-design-512.png",
+      rotation: 180,
+    },
+    {
+      name: "Mobile App Developer",
+      desc: "Must have React Native with andriod and ios.",
+      icon: "/icons8-smartphone-tablet-512.png",
+      rotation: -16.43,
+    },
+    {
+      name: "Fullstack Developer 2",
+      desc: "Backend dev (nodejs, mongoDB & nuxtjs), Frontend dev (reactjs, nextjs)",
+      icon: "/icons8-online-support-512.png",
+      rotation: 16.43,
+    },
+    {
+      name: "UI Designer",
+      desc: "Well Equiped with Adobe and all other graphic tool to build web app and mobile templates.",
+      icon: "/icons8-view-quilt-512.png",
+      rotation: 180,
+    },
+  ];
+  return (
+    <Layout title="Career">
+      <Header />
+      <div className="sub-hero-section">
+        <div className="feature-container">
+          <div className="hero-title-center flex-inner">
+            <div className="tag-text">Hiring now</div>
 
-              <div className="margin-20px">
-                <h1 className="hero-title color-white">
-                  {"We are "}
-                  <span className="add-scribble-below">{" Hiring "}</span>
-                  Now
-                  <span className="add-scribble-below">‍</span>
-                  <br />
-                </h1>
-              </div>
+            <div className="margin-20px">
+              <h1 className="hero-title color-white">
+                {"We are "}
+                <span className="add-scribble-below">{" Hiring "}</span>
+                Now
+                <span className="add-scribble-below">‍</span>
+                <br />
+              </h1>
             </div>
+          </div>
 
-            <div className="margin-70px">
-              <div className="container">
-                <div className="features-grid">
-                  <div className="features-photo"></div>
-                  <div className="boxes-grid">
-                    <div className="features-content">
-                      <Image
-                        src="/icons8-web-design-512.png"
-                        width={50}
-                        height={50}
-                        alt=""
-                      />
-                      <h3>
-                        HR Executive
-                        <br />
-                      </h3>
-                      <p>
-                        Candidate must have any Degree & IT Recruiting Experience.
-                        <br />
-                      </p>
+          <div className="margin-70px">
+            <div className="container">
+              <div className="features-grid">
+                <div className="boxes-grid">
+                  {featureArray.map((row, index) => (
+                    <div
+                      key={index}
+                      className="features-content"
+                      style={{ transform: `rotate(${row?.rotation}deg)` }}
+                    >
+                      <div style={{ transform: `rotate(${-row?.rotation}deg)` }}>
+                        <Image src={row?.icon} width={50} height={50} alt="" />
+                        <h3>
+                          {row?.name}
+                          <br />
+                        </h3>
+                        <p>
+                          {row?.desc}
+                          <br />
+                        </p>
+                      </div>
                     </div>
-                    <div className="features-content">
-                      <Image
-                        src="/icons8-smartphone-tablet-512.png"
-                        width={50}
-                        height={50}
-                        alt=""
-                      />
-                      <h3>
-                        Mobile App Developer
-                        <br />
-                      </h3>
-                      <p>
-                        Must have React Native with andriod and ios.
-                        <br />
-                      </p>
-                    </div>
-                    <div className="features-content">
-                      <Image
-                        src="/icons8-online-support-512.png"
-                        width={50}
-                        height={50}
-                        alt=""
-                      />
-                      <h3>
-                        Fullstack Developer 2
-                        <br />
-                      </h3>
-                      <p>
-                        Backend dev (nodejs, mongoDB & nuxtjs), Frontend dev
-                        (reactjs, nextjs)
-                        <br />
-                      </p>
-                    </div>
-                    <div className="features-content">
-                      <Image
-                        alt=""
-                        width={50}
-                        height={50}
-                        src="/icons8-view-quilt-512.png"
-                      />
-                      <h3>
-                        UI Designer
-                        <br />
-                      </h3>
-                      <p>
-                        Well Equiped with Adobe and all other graphic tool to
-                        build web app and mobile templates.
-                        <br />
-                      </p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
+                <div className="features-photo" />
               </div>
             </div>
-          </div>
-
-          <div className="scribble-2">
-            <Image alt="" width={60} height={60} src="/scribbles-3.png" />
-          </div>
-
-          <div className="scribble-1">
-            <Image alt="" width={120} height={120} src="/scribbles-2.png" />
           </div>
         </div>
 
-        {/* <div className='section'>
+        <div className="scribble-2">
+          <Image alt="" width={60} height={60} src="/scribbles-3.png" />
+        </div>
+
+        <div className="scribble-1">
+          <Image alt="" width={120} height={120} src="/scribbles-2.png" />
+        </div>
+      </div>
+
+      {/* <div className='section'>
                 <div className='container'>
                     <div>
                         <div>
@@ -251,7 +230,7 @@ export default function Career() {
                 </div>
             </div> */}
 
-        {/* <div className='get-started-section'>
+      {/* <div className='get-started-section'>
                 <div className='container'>
                     <div className='align-center'>
                         <h4 className='hero-title _50px'>Get Started</h4>
@@ -407,6 +386,6 @@ export default function Career() {
                     />
                 </div>
             </div> */}
-      </Layout>
-    );
+    </Layout>
+  );
 }

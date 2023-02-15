@@ -2203,6 +2203,11 @@ figure {
   flex: 1;
 }
 
+.feature-container {
+  @extend .container;
+  max-width: min-content;
+}
+
 .container.flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2704,7 +2709,9 @@ figure {
 
 .features-photo {
   overflow: hidden;
-  min-height: 650px;
+  // min-height: 650px;
+  height: 51.357em;
+  width: 49.428em;
   border-radius: 10px;
   background-image: url("/team-1.jpg");
   background-position: 50% 50%;
@@ -2729,9 +2736,9 @@ figure {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10px;
-  padding-right: 32px;
-  padding-left: 32px;
+  // padding-top: 10px;
+  // padding-right: 32px;
+  // padding-left: 32px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2746,8 +2753,14 @@ figure {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #fff;
+  // background-color: #fff;
+  background: url('/carreerShape.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
   text-align: center;
+  height: 295px;
+  width: 348px;
 }
 
 .features-content.padding-box {
