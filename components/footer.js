@@ -31,11 +31,9 @@ export default function Footer() {
               <Link href="/">
                 <a className="footer-link black">Home</a>
               </Link>
-
               <Link href="/career">
                 <a className="footer-link black">Careers</a>
               </Link>
-
               <Link href="/contact">
                 <a className="footer-link black">Contact</a>
               </Link>
@@ -69,19 +67,10 @@ export default function Footer() {
             <h4 className="footer-title dark-title">Follow</h4>
             <div className="margin-25px">
               <div className="social-wrapper left">
-                <Link passHref href="#">
-                  <a
-                    className="
-                                            social-icon
-                                            only-left
-                                            w-inline-block
-                                        "
-                  >
-                    <Image src="/facebook.png" width={14} height={14} alt="" />
-                  </a>
-                </Link>
-
-                <Link passHref href="#">
+                <Link
+                  passHref
+                  href="https://www.linkedin.com/company/byecom-innovations"
+                >
                   <a
                     className="
                                             social-icon
@@ -90,18 +79,6 @@ export default function Footer() {
                                         "
                   >
                     <Image src="/linkedin.png" width={14} height={14} alt="" />
-                  </a>
-                </Link>
-
-                <Link passHref href="#">
-                  <a
-                    className="
-                                            social-icon
-                                            only-left
-                                            w-inline-block
-                                        "
-                  >
-                    <Image src="/instagram.png" width={15} height={15} alt="" />
                   </a>
                 </Link>
               </div>
