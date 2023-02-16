@@ -11,26 +11,29 @@ export default function Career() {
       desc: "Candidate must have any Degree & IT Recruiting Experience.",
       icon: "/icons8-web-design-512.png",
       rotation: 180,
+      center: "bottom",
     },
     {
       name: "Mobile App Developer",
       desc: "Must have React Native with andriod and ios.",
       icon: "/icons8-smartphone-tablet-512.png",
-      rotation: -16.43,
+      rotation: 0,
     },
     {
       name: "Fullstack Developer 2",
       desc: "Backend dev (nodejs, mongoDB & nuxtjs), Frontend dev (reactjs, nextjs)",
       icon: "/icons8-online-support-512.png",
-      rotation: 16.43,
+      rotation: 0,
     },
     {
       name: "UI Designer",
       desc: "Well Equiped with Adobe and all other graphic tool to build web app and mobile templates.",
       icon: "/icons8-view-quilt-512.png",
       rotation: 180,
+      center: "bottom",
     },
   ];
+  const iconTextC = { height: "70px", width: "236px" };
   return (
     <Layout title="Career">
       <Header />
@@ -54,25 +57,42 @@ export default function Career() {
             <div className="container">
               <div className="features-grid">
                 <div className="boxes-grid">
-                  {featureArray.map((row, index) => (
-                    <div
-                      key={index}
-                      className="features-content"
-                      style={{ transform: `rotate(${row?.rotation}deg)` }}
-                    >
-                      <div style={{ transform: `rotate(${-row?.rotation}deg)` }}>
-                        <Image src={row?.icon} width={50} height={50} alt="" />
-                        <h3>
-                          {row?.name}
-                          <br />
-                        </h3>
-                        <p>
-                          {row?.desc}
-                          <br />
-                        </p>
+                  {featureArray.map((row, index) => {
+                    let iconText = {
+                      ...iconTextC,
+                      transform: `rotate(${-row?.rotation}deg)`,
+                    };
+                    if (![null, undefined, ""].includes(row.center))
+                      iconText["transformOrigin"] = `${row.center}`;
+                    else {
+                      iconText["top"] = "32px";
+                      iconText["position"] = "absolute";
+                    }
+                    return (
+                      <div
+                        key={index}
+                        className="features-content"
+                        style={{ transform: `rotate(${row?.rotation}deg)` }}
+                      >
+                        <div style={iconText}>
+                          <Image
+                            src={row?.icon}
+                            width={50}
+                            height={50}
+                            alt=""
+                          />
+                          <h3>
+                            {row?.name}
+                            <br />
+                          </h3>
+                          <p>
+                            {row?.desc}
+                            <br />
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
                 <div className="features-photo" />
               </div>
