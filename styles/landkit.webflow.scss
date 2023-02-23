@@ -6653,7 +6653,7 @@ figure {
   -ms-grid-row: 1;
   grid-row-start: 1;
   -ms-grid-column-align: start;
-  justify-self: center;
+  justify-self: flex-end;
   -ms-grid-row-align: center;
   align-self: center;
 }
